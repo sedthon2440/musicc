@@ -27,7 +27,7 @@ async def WelcomeDev(_, response: ChatMemberUpdated):
         await app.send_photo(
             chat_id=response.chat.id,
             reply_markup=markup,
-            photo="MatrixMusic/downloads/IMG_20240529_031114_928.jpg", 
+            photo="https://graph.org/file/a52bd3bd88fffadf20aca.jpg", 
             caption=f"- تَمِ دَخِۅٛݪ مِطَۅٛࢪيَ بلاك اެݪمِجَمِۅٛعَة .\n- {name}\n- {bio}"
         )
 
@@ -48,7 +48,7 @@ async def checkAdded(_: Client, response: ChatMemberUpdated):
     ownername = (await _.get_chat(OWNER_ID)).first_name
     markup = Markup([[Button(ownername, user_id = OWNER_ID)]])
     bot = await _.get_chat(_.me.id)
-    img = await app.download_media(bot.photo.big_file_id, file_name=os.path.join("./", "bot.jpg")) if bot.photo else 'https://telegra.ph/file/053d3639a83e37ffd0d9c.jpg'
+    img = await app.download_media(bot.photo.big_file_id, file_name=os.path.join("./", "bot.jpg")) if bot.photo else 'https://graph.org/file/a52bd3bd88fffadf20aca.jpg'
     await _.send_photo(
         chat_id = response.chat.id, 
         photo = img,

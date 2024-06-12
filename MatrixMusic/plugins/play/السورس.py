@@ -1,93 +1,104 @@
-#𝙲𝙷.𝚂𝙾𝚄𝚁𝙲𝙴 : @SOURCE_EROR
-#𝙳𝙴𝚅 𝙼𝙰𝚉𝙴𝙽 : @Y_D_ll
-#𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @SOPER_EROR
-#MOHAMED تم التعديل بواسطة 🎸 ⋅
-from pyrogram.types import CallbackQuery
+
 import asyncio
-from asyncio import gather
 import os
 import time
 import requests
-from pyrogram import enums
-from pyrogram import types
-import aiohttp
-from pyrogram.types import CallbackQuery
+from config import START_IMG_URL
 from pyrogram import filters
+import random
 from pyrogram import Client
-from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
-from MatrixMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from MatrixMusic import app
-from asyncio import gather
-from pyrogram.errors import FloodWait
+from strings.filters import command
+from AbdoX import (Apple, Resso, Spotify, Telegram, YouTube, app)
+from AbdoX import app
+from random import  choice, randint
 
-
-
-##############################################################
-##############################################################
-          
-     
-@app.on_message(filters.command(["سورس","السورس","سورس مين","بلاك"], ""), group=221213)
+                
+@app.on_message(
+    command(["سورس","✯ السورس","السورس"])
+    
+)
 async def huhh(client: Client, message: Message):
     await message.reply_video(
-        video=f"https://graph.org/file/fb68ae3b5a2e1d62fd94f.mp4",
-        caption=f"""• [⌯𝐃𝐄𝐕.𝐒𝐎𝐔𝐑𝐂𝐄⌯](https://t.me/y_o_v) •\n
- [⌯𝐒𝐎𝐔𝐑𝐂𝐄 𝗕𝗹𝗮𝗰𝗸⌯](https://t.me/KKC8C)\n
- [⌯𝐒𝐔𝐏𝐏𝐔𝐑𝐓.𝐒𝐎𝐔𝐑𝐂𝐄⌯](https://t.me/Senzir_Suuport)\n""",
+        video=f"https://telegra.ph/file/f41332c58faf698f5d37e.mp4",
+        caption=f"𖥻 WelCoMe To SoUrCe 𝗕𝗹𝗮𝗰𝗸 Music .",
         reply_markup=InlineKeyboardMarkup(
-        [
             [
+                [
                     InlineKeyboardButton(
-                        "‹ 𝐃𝐄𝐕 𝐒𝐎𝐔𝐑𝐂𝐄 › ", url=f"https://t.me/y_o_v"),
-                ],[
-                    InlineKeyboardButton(
-                        "‹ ᏟᎻᎪΝΝᎬᏞ ›", url=f"https://t.me/KKC8C"), 
-                    InlineKeyboardButton(
-                        "‹ ᏟᎻᎪΝΝᎬᏞ² ›", url=f"https://t.me/cecrr"),
-                ],[
-                    InlineKeyboardButton(
-                        "‹ اضف بوت السورس الي مجموعتك ⚡️ ⋅ ›", url=f"http://t.me/F6Z_bot?startgroup=new"),
+                        "𖥻 GrOuP .", url=f"https://t.me/black_spoort"), 
+                 InlineKeyboardButton(
+                   "𖥻 SoUrCe .",       url=f"https://t.me/KKC8C"), 
+                 
+             ],[ 
+            InlineKeyboardButton(
+                        "⏤͟͞ َِ⍣⃟َ𝐓𝐇ِ𝐄 𓆩ََِِ𝐘َِْ𝐎ِِ𝐔ًٌُ𝐒𝐄ُِ𝐅𓆪 .", url=f"https://t.me/y_o_v"), 
+                      
+             ],[ 
+            InlineKeyboardButton(
+                      "تنصيب بوت", url=f"https://t.me/y_o_v"), 
+                      
+             ],[ 
+                  InlineKeyboardButton(
+                text="𖥻 AdD Me To YoUr GrOuP .",
+                url=f"https://t.me/{app.username}?startgroup=true"),
+                ],
+
             ]
-        ]
-         ),parse_mode=enums.ParseMode.MARKDOWN)
+
+        ),
+
+    )
 
 
+@app.on_message(filters.command(["مطور السورس","يوسف","بلاك","مطور السورس ✯"], ""), group=73) 
+async def deev(client: Client, message: Message):
+     user = await client.get_chat(chat_id="y_o_v")
+     name = user.first_name
+     username = user.username 
+     bio = user.bio
+     user_id = user.id
+     photo = user.photo.big_file_id
+     photo = await client.download_media(photo)
+     link = f"https://t.me/{message.chat.username}"
+     title = message.chat.title if message.chat.title else message.chat.first_name
+     chat_title = f"User : {message.from_user.mention} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
+     try:
+      await client.send_message(username, f"**هناك شخص بالحاجه اليك عزيزي المطور**\n{chat_title}\nChat Id : `{message.chat.id}`",
+      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{title}", url=f"{link}")]]))
+     except:
+       pass
+     await message.reply_photo(
+     photo=photo,
+     caption=f"**𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛 𝙽𝚊𝚖𝚎 : {name}** \n**𝚍𝚎𝚟 𝚞𝚜𝚎𝚛 𝚗𝚊𝚖𝚎 : @{username}**\n**{bio}**",
+     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{name}", user_id=f"{user_id}")]]))
+     try:
+       os.remove(photo)
+     except:
+        pass
 
-@app.on_message(filters.command(["مطور السورس"], ""), group=221212)
-async def huhh(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://graph.org/file/a52bd3bd88fffadf20aca.jpg",
-        caption=f"""• ⌯ Developer Name : ˛ 𓆩ََِِ𝐘َِْ𝐎ِِ𝐔ًٌُ𝐒𝐄ُِ𝐅𓆪 ⌯ •\n- Devloper Username : @y_o_v Devloper id : 6094238403 ⋅""",
-        reply_markup=InlineKeyboardMarkup(
-        [
-            [
-                    InlineKeyboardButton(
-                        " ‹ قناة السورس ⋅ › ", url=f"https://t.me/KKC8C"),
-                ],[
-                    InlineKeyboardButton(
-                        "⏤͟͞ َِ⍣⃟َ𝐓𝐇ِ𝐄 𓆩ََِِ𝐘َِْ𝐎ِِ𝐔ًٌُ𝐒𝐄ُِ𝐅𓆪", url=f"https://t.me/y_o_v"), 
-                ],[
-                    InlineKeyboardButton(
-                        "‹ اضف بوت السورس الي مجموعتك ⚡️🎸 ⋅ ›", url=f"http://t.me/@6Z_bot?startgroup=new"),
-            ]
-        ]
-         ),
-     )
-
-               
-@app.on_message(filters.command(["اسمي","شو اسمي","قول اسمي"], ""), group=123222)
-async def vgdg(client: Client, message: Message):
-    await message.reply_text(
-        f"""- اسمك » ⦗ {message.from_user.mention} ⦘ 🖤 ⋅""") 
-
-
-##############################################################
-##############################################################
-##############################################################
-  
-
-
-#𝙲𝙷.𝚂𝙾𝚄𝚁𝙲𝙴 : @SOURCE_EROR
-#𝙳𝙴𝚅 𝙼𝙰𝚉𝙴𝙽 : @Y_D_ll
-#𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @SOPER_EROR
-#MOHAMED تم التعديل بواسطة 🎸 ⋅    
+@app.on_message(filters.command(["مبرمج السورس","لينو","لين","لينتي"], ""), group=73) 
+async def deev(client: Client, message: Message):
+     user = await client.get_chat(chat_id="lino_02")
+     name = user.first_name
+     username = user.username 
+     bio = user.bio
+     user_id = user.id
+     photo = user.photo.big_file_id
+     photo = await client.download_media(photo)
+     link = f"https://t.me/{message.chat.username}"
+     title = message.chat.title if message.chat.title else message.chat.first_name
+     chat_title = f"User : {message.from_user.mention} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
+     try:
+      await client.send_message(username, f"**هناك شخص بالحاجه اليك عزيزي المطور**\n{chat_title}\nChat Id : `{message.chat.id}`",
+      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{title}", url=f"{link}")]]))
+     except:
+       pass
+     await message.reply_photo(
+     photo=photo,
+     caption=f"**𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛 𝙽𝚊𝚖𝚎 : {name}** \n**𝚍𝚎𝚟 𝚞𝚜𝚎𝚛 𝚗𝚊𝚖𝚎 : @{username}**\n**{bio}**",
+     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{name}", user_id=f"{user_id}")]]))
+     try:
+       os.remove(photo)
+     except:
+        pass

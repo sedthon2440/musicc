@@ -14,7 +14,7 @@ async def must_join_channel(bot: Client, msg: Message):
             if "https://t.me/F_U_01".isalpha():
                 link = "https://t.me/F_U_01"
             else:
-                chat_info = await bot.get_chat("F_U_01)
+                chat_info = await bot.get_chat("F_U_01")
                 link = chat_info.invite_link
             try:
                 await msg.reply(

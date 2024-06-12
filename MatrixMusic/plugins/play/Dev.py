@@ -71,7 +71,7 @@ async def devatari(_, query: CallbackQuery):
                                      f"<b>≭︰ايدي المجموعة ~ ⦗ {chat} ⦘ .\n</b>")
 
 
-    await query.message.reply_text(f"<b>≭︰تم إرسال استدعائك إلى مطور البوت .\n\n≭︰Black Team ~ ⦗ @F_U_01 ⦘ .\n≭︰Black Updates ~ ⦗ @F_U_01 ⦘ .\n≭︰Dev ~ ⦗ @CZCRR ⦘ .</b>")
+    await query.message.reply_text(f"<b>≭︰تم إرسال استدعائك إلى مطور البوت .\n\n≭︰Black Team ~ ⦗ @ccvzu ⦘ .\n≭︰Black Updates ~ ⦗ @ccvzu ⦘ .\n≭︰Dev ~ ⦗ @CZCRR ⦘ .</b>")
 
 @app.on_message(
     command(["المطور"])

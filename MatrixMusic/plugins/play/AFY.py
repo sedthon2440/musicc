@@ -4,13 +4,13 @@ from pyrogram import Client, filters
 from pyrogram import filters
 from strings import get_command
 from strings.filters import command
-from YukkiMusic import app
+from MatrixMusic import app
 from config import OWNER_ID
-from YukkiMusic.misc import SUDOERS
+from MatrixMusic.misc import SUDOERS
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardMarkup
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMarkup, Message)
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from YukkiMusic.misc import SUDOERS
+from MatrixMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from MatrixMusic.misc import SUDOERS
 
 @app.on_message(command(["ابراج","ابراج"]))
 async def abrag(c: Client, m: Message):

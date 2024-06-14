@@ -4,17 +4,17 @@ from strings import get_command
 from strings.filters import command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery 
 from typing import Union
-from YukkiMusic import app
+from 𝗕𝗹𝗮𝗰𝗸 import app
 import re
 import sys
 
-GAME_MESSAGE = "ᥲ️ᖇꪀ᥆ρ. 🐰\n\n🐉¦ مرحبا بك عزيزي:\n🐉¦في قسم العاب ارنوب\n\nᥲ️ᖇꪀ᥆ρ. 🐰"
+GAME_MESSAGE = "𝗕𝗹𝗮𝗰𝗸. 🖤\n\n🐉¦ مرحبا بك عزيزي:\n🐉¦في قسم العاب بلاك\n\𝗕𝗹𝗮𝗰𝗸. 🖤"
 GAME_BUTTONS = [
     [ 
         InlineKeyboardButton ('العاب 3D', callback_data= 'GAME1'),
         InlineKeyboardButton ('مميزات', callback_data= 'GAME2'),
         ],[
-        InlineKeyboardButton ('⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝', url =f"https://t.me/N_G_12")              
+        InlineKeyboardButton ('˛ 𝗦𝗼𝘂𝗿𝗰𝗲 𝗕𝗹𝗮𝗰𝗸 .', url =f"https://t.me/KKC8C")              
                  ],[
                 InlineKeyboardButton(
                         "𝗁᥆ꪔᥱ", callback_data="close"),
@@ -308,7 +308,7 @@ async def kaompj(client, message):
 )
 async def zohary(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/edf02e163b02d2751b87d.jpg",
+        photo=f"https://graph.org/file/3c9f5ecca9d71df31a0f6.jpg",
         caption= GAME_MESSAGE,
         reply_markup=InlineKeyboardMarkup(GAME_BUTTONS)
     )  
@@ -316,7 +316,7 @@ async def zohary(client: Client, message: Message):
 async def callback_query(client, CallbackQuery):
           if CallbackQuery.data == "GAME1":
             
-             GAME1_MESSAGE = "ᥲ️ᖇꪀ᥆ρ. 🐰\n\nمرحبا بك في قسم العاب 3D\n\n🐉"
+             GAME1_MESSAGE = "𝗕𝗹𝗮𝗰𝗸. 🖤\n\nمرحبا بك في قسم العاب 3D\n\n🐉"
 
              GAME1_BUTTONS = [
                  [
@@ -360,14 +360,14 @@ async def callback_query(client, CallbackQuery):
               )
           elif CallbackQuery.data == "GAME":
                
-               RETURN_GAME = "ᥲ️ᖇꪀ᥆ρ. 🐰\n\n🐉¦مرحبا بك في قسم العاب cr\n🐉¦اختار ما تشاء من الالعاب مسليه وستمتع بها\n\nᥲ️ᖇꪀ᥆ρ. 🐰" 
+               RETURN_GAME = "𝗕𝗹𝗮𝗰𝗸. 🐰\n\n🐉¦مرحبا بك في قسم العاب cr\n🐉¦اختار ما تشاء من الالعاب مسليه وستمتع بها\n\𝗕𝗹𝗮𝗰𝗸.🖤" 
 
                RETURN_BUTTON = [
                     [ 
                       InlineKeyboardButton ('🕷¦العاب 3D', callback_data= 'GAME1'),
                       InlineKeyboardButton ('🐰¦العاب', callback_data= 'GAME2')
                       ],[
-        InlineKeyboardButton ('⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝', url =f"https://t.me/N_G_12")              
+        InlineKeyboardButton ('˛ 𝗦𝗼𝘂𝗿𝗰𝗲 𝗕𝗹𝗮𝗰𝗸 .', url =f"https://t.me/KKC8C")              
                  ],[
                 InlineKeyboardButton(
                         "𝗁᥆ꪔᥱ", callback_data="close"),
@@ -384,7 +384,7 @@ async def callback_query(client, CallbackQuery):
 
                SORGAM_BUTTON = [
                     [ 
-                      InlineKeyboardButton ('⌞ ᥉᥆υᖇᥴᥱ ᥲ️ᖇꪀ᥆ρ⌝', url =f"https://t.me/N_G_12")
+                      InlineKeyboardButton ('˛ 𝗦𝗼𝘂𝗿𝗰𝗲 𝗕𝗹𝗮𝗰𝗸 .', url =f"https://t.me/KKC8C")
                       ],[
                          InlineKeyboardButton ('𝗁᥆ꪔᥱ', callback_data= 'GAME')
                     ]

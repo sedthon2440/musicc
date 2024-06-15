@@ -5,20 +5,20 @@ from MatrixMusic import app
 
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(bot: Client, msg: Message):
-    if not "https://t.me/ccvzu":  # Not compulsory
+    if not "https://t.me/O_U_Q1":  # Not compulsory
         return
     try:
         try:
             await bot.get_chat_member("ccvzu", msg.from_user.id)
         except UserNotParticipant:
-            if "https://t.me/ccvzu".isalpha():
-                link = "https://t.me/ccvzu"
+            if "https://t.me/O_U_Q1".isalpha():
+                link = "https://t.me/O_U_Q1"
             else:
                 chat_info = await bot.get_chat("ccvzu")
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"⌯︙عذࢪاَ حَبيبي ↫ {msg.from_user.mention} \n⌯︙عـليك الاشـتࢪاك في قنـاة البوت .\n⌯︙قناة : t.me/ccvzu 🍓.\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ",
+                    f"⌯︙عذࢪاَ حَبيبي ↫ {msg.from_user.mention} \n⌯︙عـليك الاشـتࢪاك في قنـاة البوت .\n⌯︙قناة : t.me/O_U_Q1 🍓.\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton("ROLEX", url=link)]
@@ -28,4 +28,4 @@ async def must_join_channel(bot: Client, msg: Message):
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"I'm not admin in the MUST_JOIN chat @ccvzu !")
+        print(f"I'm not admin in the MUST_JOIN chat @O_U_Q1 !")

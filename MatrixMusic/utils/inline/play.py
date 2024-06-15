@@ -62,9 +62,9 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             
         ],
-        [InlineKeyboardButton(text="ᏟᎻᎪΝΝᎬᏞ", url=f"https://t.me/ccvzu"), InlineKeyboardButton(text="ᏟᎻᎪΝΝᎬᏞ²", url=f"https://t.me/ccvzu")],
+        [InlineKeyboardButton(text="ᏟᎻᎪΝΝᎬᏞ", url=f"https://t.me/ccvzu"), InlineKeyboardButton(text="ᏟᎻᎪΝΝᎬᏞ²", url=f"https://t.me/O_U_Q1")],
         
-        [InlineKeyboardButton("YZN", url=f"https://t.me/CZCRR")],
+        [InlineKeyboardButton("OWNER", url=f"https://t.me/O_U_S1")],
         [InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ⚡️", url=f"https://t.me/Gor_Genabot?startgroup=True")],
     ]
     return buttons
@@ -79,8 +79,8 @@ def stream_markup(_, chat_id):
             
     
         ],
-        [InlineKeyboardButton(text="ᏟᎻᎪΝΝᎬᏞ", url=f"https://t.me/ccvzu"), InlineKeyboardButton(text="ᏟᎻᎪΝΝᎬᏞ²", url=f"https://t.me/ccvzu")],
-        [InlineKeyboardButton("YZN", url=f"https://t.me/CZCRR")],
+        [InlineKeyboardButton(text="ᏟᎻᎪΝΝᎬᏞ", url=f"https://t.me/O_U_Q1"), InlineKeyboardButton(text="ᏟᎻᎪΝΝᎬᏞ²", url=f"https://t.me/O_U_Q1")],
+        [InlineKeyboardButton("OWNER", url=f"https://t.me/O_U_S1")],
         [InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ⚡️", url=f"https://t.me/Gor_Genabot?startgroup=True")],
     ]
     return buttons

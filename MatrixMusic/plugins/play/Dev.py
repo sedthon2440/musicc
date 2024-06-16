@@ -79,7 +79,7 @@ async def devatari(_, query: CallbackQuery):
   
 )
 async def rsexs(client, message):
-    usr = await app.get_chat("y_o_v")
+    usr = await app.get_chat("BDB0B")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"≭︰Dev Name ↬ ⦗ {name} ⦘\n≭︰Dev User ↬ ⦗ @{usr.username} ⦘\n≭︰Dev id ↬ ⦗ {usr.id} ⦘",  

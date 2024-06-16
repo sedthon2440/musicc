@@ -29,7 +29,7 @@ async def ytsearch(_, message: Message):
             [
                 [
                 InlineKeyboardButton(
-                        "سِۅٛࢪسِ بَغِدَاެدَ", url=f"https://t.me/lggbg"),
+                        "سـورس بـغـداد", url=f"https://t.me/lggbg"),
                 ],[
                     InlineKeyboardButton(
                         text="‹ اغلاق ›",

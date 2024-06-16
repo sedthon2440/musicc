@@ -8,12 +8,13 @@ from config import getenv
 MUST_JOIN = "lggbg"
 
 
-required_commands = ["تشغيل", "بوت", "ايدي", "الاوامر", "/start", "ايقاف"]
 
 
 
 
-@app.on_message(filters.command(required_commands) & filters.private, group=-1)
+
+@app.on_message(filters.incoming & filters.private, group=-1)
+
 async def must_join_channel(bot: Client, msg: Message):
     if not MUST_JOIN:  # Not compulsory
         return
@@ -40,10 +41,10 @@ async def must_join_channel(bot: Client, msg: Message):
 
 
 MUST_JOIN = "lggbg"
-matrix_commands = ["تشغيل", "بوت", "ايدي", "الاوامر", "/start", "ايقاف"]
 
 
-@app.on_message(filters.command(matrix_commands) & filters.group, group=-1)
+
+@app.on_message(filters.incoming & filters.group, group=-1)
 async def must_join_channel(bot: Client, msg: Message):
     if not MUST_JOIN:  # Not compulsory
         return

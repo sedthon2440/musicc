@@ -6,13 +6,13 @@ from pyrogram import filters
 from database import get_db_general_rtb
 from utils import get_restarted
 
-super_sudoers = [6094238403]
+super_sudoers = [7291869416]
 
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID", 17211426))
-API_HASH = getenv("API_HASH", "656a097533402eb717ba82298a752177")
+API_ID = int(getenv("API_ID", 9671629))
+API_HASH = getenv("API_HASH", "be5c84e9dc1ca0e2b53d54b71e575124")
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
@@ -26,7 +26,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 2000))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6094238403))
+OWNER_ID = int(getenv("OWNER_ID", 7291869416))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -43,9 +43,9 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-CHANNEL_NAME = getenv("CHANNEL_NAME", "• 𝐁𝐥𝐚𝐜𝐤  •")
+CHANNEL_NAME = getenv("CHANNEL_NAME", "سِۅٛࢪسِ بَغِدَاެدَ")
 CHANNEL_LINK = getenv("CHANNEL_LINK", "kkc8c")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/KKC8C")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/lggbg")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -96,21 +96,21 @@ command = ["/"]
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
+    "START_IMG_URL", "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
+    "PING_IMG_URL", "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
-STATS_IMG_URL = "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
-TELEGRAM_VIDEO_URL = "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
-STREAM_IMG_URL ="https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
-YOUTUBE_IMG_URL = "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/e29d3874ae4fed8fcd5b2.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
+STATS_IMG_URL = "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
+STREAM_IMG_URL ="https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg"
 
 
 def time_to_seconds(time):

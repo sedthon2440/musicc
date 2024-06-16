@@ -1,7 +1,7 @@
 {
     "name": "ميـوزك ماتـركس",
     "description": "- لـ تشغيـل الاغانـي والفيديـو والبثـوث المباشـرة فـي المكالمـات الصوتيـه والمرئيـة عـلى تيليجــرام",
-    "logo": "https://telegra.ph/file/342bad57d5d870a4b5163.jpg",
+    "logo": "https://graph.org/file/de8dc2aef9a2636c6d2a4.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -14,22 +14,22 @@
     "env": {
       "BOT_TOKEN": {
         "description": "⦗ @Botfather ⦘ ↫ تـــوكـــن الـبـوت",
-        "value": "7048904557:AAEalsC795iCQs-kGca1ufkns1S5TvXxppM",
+        "value": "",
         "required": true
       },
       "OWNER_ID": {
         "description": "⦗ ايـــدي المطـــور ⦘ ↫ مطـــور بـــوت الميـــوزك",
-        "value": "6094238403",
+        "value": "7291869416",
         "required": true
       },
       "STRING_SESSION": {
         "description": "⦗ V2 ⦘ ↫ كـود جلسـة الحسـاب المساعـد لـ الميـوزك",
-        "value": "BAGi8fAAJP11T0MmgQzo9An81XvC9omWXzWxzU2PIyTs4tJwU7FgQWGiU57sMW7fz51k1DGAYgYxZBawsnTrFW-iJ-YLr7t8vHJoJeV4W7sL7MCXBvDjlMY9noYPxWzd2F0gLZV17VGtC9cGxM6NtQ_8p5pGWs_BdbZ4xPUkks8zRcFEId1KzEU0hW5NVNIc2NaRh-ZtONg1Vfeoyz9-kowTw6hmfyNwBX29gP5PPTEhp4o4srpF7l8qN5JdqH-pG7An1YhjVKfd2U5XBabHh5RMGYstpeYTvJYL4bGo30jrcvbpG3WP7WsPiJXoW24u-P0IdRc_scsZoWErWxevdETtJ5vimAAAAAGs3vLeAA",
+        "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
         "description": "⦗ https://dashboard.heroku.com/account ⦘ ادخـل كود ايبـي كـي",
-        "value": "HRKU-a974bb70-b21e-49a5-a035-9a45ee4386f1",
+        "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
@@ -39,7 +39,7 @@
       },
       "LOGGER_ID": {
         "description": "ايـدي قروب السـجل",
-        "value": "-1002136290899",
+        "value": "",
         "required": true
       }
     },

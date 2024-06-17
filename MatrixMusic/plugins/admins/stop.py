@@ -14,6 +14,36 @@ from MatrixMusic.utils.decorators import AdminRightsCheck
 from MatrixMusic.utils.inline import close_markup
 from config import BANNED_USERS
 
+
+
+import random
+import string
+from ast import ExceptHandler
+from pyrogram import filters, Client
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto, Message
+from pytgcalls.exceptions import NoActiveGroupCall
+
+import config
+from config import BOT_TOKEN
+from strings.filters import command
+from MatrixMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from MatrixMusic.core.call import Zelzaly
+from MatrixMusic.utils import seconds_to_min, time_to_seconds
+from MatrixMusic.utils.channelplay import get_channeplayCB
+from MatrixMusic.utils.decorators.language import languageCB
+from MatrixMusic.utils.decorators.play import PlayWrapper
+from MatrixMusic.utils.formatters import formats
+from MatrixMusic.utils.inline import (
+    botplaylist_markup,
+    livestream_markup,
+    playlist_markup,
+    slider_markup,
+    track_markup,
+)
+from MatrixMusic.utils.logger import play_logs
+from MatrixMusic.utils.stream.stream import stream
+from config import BANNED_USERS, lyrical
+
 force_btn = InlineKeyboardMarkup(
     [
         [

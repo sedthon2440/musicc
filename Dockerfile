@@ -1,12 +1,12 @@
-FROM nikolaik/python-nodejs:python3.10-nodejs19
+FROM python:3.10.9-slim-buster
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install git curl python3-pip ffmpeg -y
+RUN pip3 install -U pip
+RUN python3 -m pip install --upgrade pip
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN apt-get install -y nodejs
+RUN npm i -g npm@8.19.4
+RUN pip3 install --no-cache-dir -r requirements.txt
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-
-COPY . /app/
-WORKDIR /app/
-RUN pip3 install --no-cache-dir -U -r requirements.txt
-
-CMD bash start
+ENV PATH="/home/MatrixMusic/bin:$PATH"
+CMD python3 ser.py & python3 -m MatrixMusic
